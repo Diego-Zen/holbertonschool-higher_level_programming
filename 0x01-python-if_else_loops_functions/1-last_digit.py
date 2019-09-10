@@ -1,2 +1,18 @@
 #!/usr/bin/python3
-def uppercase(str):
+import random
+
+number = random.randint(-10000, 10000)
+
+if number < 0:
+    non_negative = number * -1
+else:
+    non_negative = number
+
+last = non_negative % 10
+
+if last > 5:
+    print("Last digit of {:d} is {:d} and is greater than 5".format(number, last))
+elif last < 6 and last != 0:
+    print("Last digit of {:d} is {:d} and is less that 6 and not 0".format(number, last))
+else:
+    print("Last digit of {:d} is {:d} and is zero".format(number, last))
