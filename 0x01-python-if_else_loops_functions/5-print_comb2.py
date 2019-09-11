@@ -1,2 +1,6 @@
 #!/usr/bin/python3
-def fizzbuzz():
+for i in range(0, 99):
+    if i < 98:
+        print("{:02d},".format(i), end=" ")
+    else:
+        print("{:02d}".format(i))
