@@ -4,9 +4,5 @@ def multiple_returns(sentence):
         my_tuple = 0, None
         return my_tuple
 
-    length = 0
-    for i in sentence:
-        length += 1
-
-    my_tuple = length, sentence[0]
+    my_tuple = len(sentence), sentence[0]
     return my_tuple
