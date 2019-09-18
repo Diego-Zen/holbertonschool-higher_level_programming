@@ -3,7 +3,6 @@ def max_integer(my_list=[]):
     if my_list is not None:
         if len(my_list) > 0:
             my_list.sort()
-            print(my_list)
             return my_list[-1]
         else:
             return None
