@@ -66,9 +66,9 @@ What you should learn from this project:
 
 
 ### [12. Roman to Integer](./12-roman_to_int.py)
-* Technical interview preparation: 
+* Technical interview preparation:
 
 ---
 
 ## Author
-* **Diego Monroy** - [Diego-Zen](https://github.com/Diego-Zen)
+* **Diego Monroy** - [diegozencode](https://github.com/diegozencode)

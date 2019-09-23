@@ -51,7 +51,7 @@ What you should learn from this project:
 
 
 ### [7. islower](./7-islower.py)
-* Write a function that checks for lowercase character. 
+* Write a function that checks for lowercase character.
 
 
 ### [8. To uppercase](./8-uppercase.py)
@@ -71,13 +71,13 @@ What you should learn from this project:
 
 
 ### [12. Fizz Buzz](./12-fizzbuzz.py)
-* Write a function that prints the numbers from 1 to 100 separated by a space. 
+* Write a function that prints the numbers from 1 to 100 separated by a space.
 
 
 ### [13. Insert in sorted linked list](./13-insert_number.c)
-* Technical interview preparation: 
+* Technical interview preparation:
 
 ---
 
 ## Author
-* **Diego Monroy** - [Diego-Zen](https://github.com/Diego-Zen)
+* **Diego Monroy** - [diegozencode](https://github.com/diegozencode)

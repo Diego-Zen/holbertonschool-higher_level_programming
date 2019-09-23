@@ -55,7 +55,7 @@ What you should learn from this project:
 
 
 ### [9. Find the max](./9-max_integer.py)
-* Write a function that finds the biggest integer of a list. 
+* Write a function that finds the biggest integer of a list.
 
 
 ### [10. Only by 2](./10-divisible_by_2.py)
@@ -71,9 +71,9 @@ What you should learn from this project:
 
 
 ### [13. Linked list palindrome](./13-is_palindrome.c)
-* Technical interview preparation: 
+* Technical interview preparation:
 
 ---
 
 ## Author
-* **Diego Monroy** - [Diego-Zen](https://github.com/Diego-Zen)
+* **Diego Monroy** - [diegozencode](https://github.com/diegozencode)

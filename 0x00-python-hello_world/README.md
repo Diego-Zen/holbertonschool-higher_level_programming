@@ -25,7 +25,7 @@ What you should learn from this project:
 
 
 ### [2. Hello, print](./2-print.py)
-* Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+* Write a Python script that prints exactly "Programming is like building a multilingual puzzle", followed by a new line.
 
 
 ### [3. Print integer](./3-print_number.py)
@@ -57,9 +57,9 @@ What you should learn from this project:
 
 
 ### [10. Linked list cycle](./10-check_cycle.c)
-* Technical interview preparation: 
+* Technical interview preparation:
 
 ---
 
 ## Author
-* **Diego Monroy** - [Diego-Zen](https://github.com/Diego-Zen)
+* **Diego Monroy** - [diegozencode](https://github.com/diegozencode)

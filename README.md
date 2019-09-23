@@ -12,4 +12,4 @@ The objective of this project is to create different mini projects using python 
 * Databases.
 
 ## Author
-* **Diego Monroy** - [Diego-Zen](https://github.com/Diego-Zen)
+* **Diego Monroy** - [diegozencode](https://github.com/diegozencode)
