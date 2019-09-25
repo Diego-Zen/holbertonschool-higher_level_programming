@@ -7,7 +7,7 @@ The objective of this project is to create different mini projects using python 
 
 ## Learning objectives
 * Python fundamentals.
-* Front-End.
+* Front-End development.
 * Object Oriented Programming.
 * Databases.
 
