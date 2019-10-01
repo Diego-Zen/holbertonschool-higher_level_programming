@@ -1,8 +1,15 @@
 #!/usr/bin/python3
-def safe_print_integer(value):
-    try:
-        print("{:d}".format(value))
-        return True
+import sys
 
-    except:
-        return False
+
+def safe_function(fct, *args):
+    result = None
+    try:
+        result = fct(*args)
+
+    except Exception as e:
+        print("Exception: {}".format(e), file=sys.stderr)
+        return result
+
+    else:
+        return result
