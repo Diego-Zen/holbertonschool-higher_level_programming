@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import math
+import math, dis
 
 
 class MagicClass:
@@ -7,10 +7,10 @@ class MagicClass:
     define a magic class
     """
     def __init__(self, radius=0):
-        self.__radius = radius
+        self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
             raise TypeError("radius must be a number")
-        return self.__radius = radius
+        self.__radius = radius
 
     """ Area """
     def area(self):
@@ -19,3 +19,4 @@ class MagicClass:
     """ Circunference """
     def circunference(self):
         return (math.pi * 2) * self.__radius
+dis.dis(MagicClass)
