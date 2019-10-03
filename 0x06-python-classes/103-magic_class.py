@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import math, dis
+import math
 
 
 class MagicClass:
@@ -19,4 +19,3 @@ class MagicClass:
     """ Circunference """
     def circunference(self):
         return (math.pi * 2) * self.__radius
-dis.dis(MagicClass)
