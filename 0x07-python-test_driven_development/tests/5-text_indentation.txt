@@ -1,0 +1,6 @@
+>>> test_indent = __import__('5-text_indentation').text_indentation
+
+""" if is not a string raise error """
+>>> test_indent(3)
+Traceback (most recent call last):
+TypeError: text must be a string
