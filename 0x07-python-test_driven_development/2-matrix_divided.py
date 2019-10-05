@@ -22,7 +22,7 @@ def test_case(x, div):
     """ test type error """
     if type(x) is not int and type(x) is not float:
         raise TypeError("matrix must be a matrix (list of lists) of integers/\
-        floats")
+floats")
     else:
         result = round(x / div, 2)
         return result
