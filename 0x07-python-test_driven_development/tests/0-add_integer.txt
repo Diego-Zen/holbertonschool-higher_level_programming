@@ -1,0 +1,8 @@
+>>> test1 = __import__('0-add_integer').add_integer
+>>> test1(1, 2)
+3
+>>> test1(100, -2)
+98
+>>> test1("a", 2)
+Traceback (most recent call last):
+raise TypeError("a must be an integer")
