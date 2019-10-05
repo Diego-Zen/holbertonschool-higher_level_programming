@@ -1,0 +1,18 @@
+>>> test_sq = __import__('4-print_square').print_square
+
+""" expected result """
+>>> test_sq(4)
+####
+####
+####
+####
+
+""" if is less than 0 raise error """
+>>> test_sq(-3)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+
+""" if the size is not int raise error """
+>>> test_sq(23.45)
+Traceback (most recent call last):
+TypeError: size must be an integer
