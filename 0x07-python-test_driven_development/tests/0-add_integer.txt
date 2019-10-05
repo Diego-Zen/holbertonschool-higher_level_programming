@@ -1,8 +1,23 @@
->>> test1 = __import__('0-add_integer').add_integer
->>> test1(1, 2)
+>>> test_add = __import__('0-add_integer').add_integer
+
+""" if adds two integers"""
+>>> test_add(1, 2)
 3
->>> test1(100, -2)
+
+""" if adds negative numbers """
+>>> test_add(100, -2)
 98
->>> test1("a", 2)
+
+""" if raise an error if a is not integer """
+>>> test_add("a", 2)
 Traceback (most recent call last):
 TypeError: a must be an integer
+
+""" if raise an error if b is not integer """
+>>> test_add(1, "b")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+""" if adds float numbers """
+>>> test_add(100.3, 2)
+102

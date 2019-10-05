@@ -1,0 +1,15 @@
+>>> test_str = __import__('3-say_my_name').say_my_name
+
+""" expected resul """
+>>> test_str("Jhon", "Smith")
+My name is Jhon Smith
+
+""" if first_name is not string raise error """
+>>> test_str(1, "White")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+""" if last_name is not string raise error """
+>>> test_str("Dan", 2)
+Traceback (most recent call last):
+TypeError: last_name must be a string
