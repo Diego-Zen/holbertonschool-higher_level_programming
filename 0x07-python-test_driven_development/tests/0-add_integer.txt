@@ -21,3 +21,23 @@ TypeError: b must be an integer
 """ if adds float numbers """
 >>> test_add(100.3, 2)
 102
+
+""" if arguments not present """
+>>> test_add()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+""" if one argument is missing """
+>>> test_add(1e10000000)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+""" if second argument is None """
+>>> test_add(1, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+""" if NaN """
+>>> test_add(1, float('NaN'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
