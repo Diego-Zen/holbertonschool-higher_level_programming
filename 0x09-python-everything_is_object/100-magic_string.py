@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-def copy_list(l):
-    return list(l)
+def magic_string():
+    s = "Holberton"
+    return s
