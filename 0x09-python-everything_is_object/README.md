@@ -127,38 +127,51 @@ Answer with Yes or No.
 ### [24. Richard Sim's special #0](./24-answer.txt)
 * What does this script print?
 
+```python
+a = (1)
+b = (1)
+a is b
+```
 
 ### [25. Richard Sim's special #1](./25-answer.txt)
 * What does this script print?
 
+```python
+a = (1, 2)
+b = (1, 2)
+a is b
+```
 
 ### [26. Richard Sim's special #2](./26-answer.txt)
 * What does this script print?
 
+```python
+a = ()
+b = ()
+a is b
+```
 
 ### [27. Richard Sim's special #3](./27-answer.txt)
-* >>> id(a)
+
+```python
+>>> id(a)
 139926795932424
 >>> a
 [1, 2, 3, 4]
 >>> a = a + [5]
 >>> id(a)
-
-
+```
 
 ### [28. Richard Sim's special #4](./28-answer.txt)
-* >>> a
+
+```python
+>>> a
 [1, 2, 3]
 >>> id (a)
 139926795932424
 >>> a += [4]
 >>> id(a)
-
-
-
-### [29. Python3: Mutable, Immutable... everything is object!](./106-line1.txt)
-* Write a blog post about everything you just learned / this project is covering. Your blog post should be articulated this way (one paragraph per item):
-
+```
 
 ---
 
