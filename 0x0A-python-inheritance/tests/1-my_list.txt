@@ -1,43 +1,11 @@
->>> test_add = __import__('0-add_integer').add_integer
+>>> MyList = __import__('1-my_list').MyList
 
-""" if adds two integers"""
->>> test_add(1, 2)
-3
-
-""" if adds negative numbers """
->>> test_add(100, -2)
-98
-
-""" if raise an error if a is not integer """
->>> test_add("a", 2)
-Traceback (most recent call last):
-TypeError: a must be an integer
-
-""" if raise an error if b is not integer """
->>> test_add(1, "b")
-Traceback (most recent call last):
-TypeError: b must be an integer
-
-""" if adds float numbers """
->>> test_add(100.3, 2)
-102
-
-""" if arguments not present """
->>> test_add()
-Traceback (most recent call last):
-TypeError: add_integer() missing 1 required positional argument: 'a'
-
-""" if one argument is missing """
->>> test_add(1e10000000)
-Traceback (most recent call last):
-OverflowError: cannot convert float infinity to integer
-
-""" if second argument is None """
->>> test_add(1, None)
-Traceback (most recent call last):
-TypeError: b must be an integer
-
-""" if NaN """
->>> test_add(1, float('NaN'))
-Traceback (most recent call last):
-ValueError: cannot convert float NaN to integer
+""" list """
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
