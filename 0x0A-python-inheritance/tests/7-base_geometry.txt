@@ -1,0 +1,12 @@
+>>> test_base = __import__('7-base_geometry').BaseGeometry
+
+""" if value is not integer raise error """
+>>> bg = test_base()
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+""" if value is less or equal to 0 raise error """
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+ValueError: age must be greater than 0
