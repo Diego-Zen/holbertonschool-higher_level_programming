@@ -60,7 +60,7 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
 
         if width <= 0:
-            raise ValueError("width must be an integer")
+            raise ValueError("width must be > 0")
 
         self.__width = width
 
