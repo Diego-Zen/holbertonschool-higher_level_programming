@@ -12,7 +12,8 @@ class TestBase(unittest.TestCase):
 
     def test_none(self):
         """test id"""
-        self.assertEqual(Base(12), 12)
+        b1 = Base(12)
+        self.assertEqual(b1.id, 12)
 
 
 if __name__ == '__main__':
