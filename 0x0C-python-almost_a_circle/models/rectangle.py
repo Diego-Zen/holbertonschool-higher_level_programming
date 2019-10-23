@@ -118,3 +118,12 @@ class Rectangle(Base):
             for i in range(self.width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """custom print
+        """
+        cl = "[" + self.__class__.__name__ + "] "
+        id = "(" + str(self.id) + ") "
+        xy = str(self.__x) + "/" + str(self.__y) + " - "
+        wh = str(self.__width) + "/" + str(self.__height)
+        return cl + id + xy + wh
