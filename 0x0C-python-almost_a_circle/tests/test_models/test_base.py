@@ -1,21 +1,19 @@
 #!/usr/bin/python3
-""" 0-main """
+"""
+    Unit test base
+"""
+import unittest
 from models.base import Base
 
-if __name__ == "__main__":
 
-    b1 = Base()
-    print(b1.id)
+class TestBase(unittest.TestCase):
+    """test base
+    """
 
-    b2 = Base()
-    print(b2.id)
+    def test_none(self):
+        """test id"""
+        self.assertEqual(Base(12), 12)
 
-    b3 = Base()
-    print(b3.id)
 
-    b4 = Base(12)
-    print(b4.id)
-
-    b5 = Base()
-    print(b5.id)
-
+if __name__ == '__main__':
+    unittedt.main()
