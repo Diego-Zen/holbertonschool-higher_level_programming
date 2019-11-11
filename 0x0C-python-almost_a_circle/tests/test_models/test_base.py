@@ -17,4 +17,4 @@ class TestBase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittedt.main()
+    unittest.main()
