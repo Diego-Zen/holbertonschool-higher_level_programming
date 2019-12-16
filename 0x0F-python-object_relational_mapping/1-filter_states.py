@@ -11,7 +11,7 @@ if __name__ == "__main__":
                          db=argv[3])
     c = db.cursor()
     c.execute("SELECT * FROM states "
-              "WHERE LEFT(states.name, 1) = 'N' "
+              "WHERE name LIKE 'N%' "
               "ORDER BY states.id ASC")
     res = c.fetchall()
     for row in res:
