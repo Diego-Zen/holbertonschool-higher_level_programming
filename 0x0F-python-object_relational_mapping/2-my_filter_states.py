@@ -10,10 +10,11 @@ if __name__ == "__main__":
                          passwd=argv[2],
                          db=argv[3])
     c = db.cursor()
-    arg = argv[4]
-    c.execute("SELECT * FROM states "
-              "WHERE states.name = %s "
-              "ORDER BY states.id ASC", (arg,))
+    c.execute("""
+    SELECT * FROM states
+    WHERE name = '{}'
+    ORDER BY states.id ASC
+    """.format(argv[4])
     res = c.fetchall()
     for row in res:
             print(row)
