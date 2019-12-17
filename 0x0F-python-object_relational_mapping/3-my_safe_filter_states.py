@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all states where name matches the argument"""
+"""Lists all states where name matches the argument free of sql injections"""
 from sys import argv
 import MySQLdb
 
@@ -12,7 +12,7 @@ if __name__ == "__main__":
                            charset="utf8")
     cur = conn.cursor()
     cur.execute("""SELECT * FROM states
-    WHERE name LIKE BINARY "{}" ORDER BY states.id ASC""".format(argv[4]))
+    WHERE name LIKE BINARY %s ORDER BY states.id ASC""", (argv[4],))
     query_res = cur.fetchall()
     for row in query_res:
             print("{}".format(row))
