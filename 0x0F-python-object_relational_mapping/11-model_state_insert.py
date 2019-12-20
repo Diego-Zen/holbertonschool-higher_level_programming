@@ -21,4 +21,11 @@ if __name__ == "__main__":
     session.add(new_state)
     session.commit()
 
+    last_state = (
+        session.query(State)
+        .order_by(State.id.desc())
+        .first()
+    )
+    print("{}".format(last_state.id))
+
     session.close()
