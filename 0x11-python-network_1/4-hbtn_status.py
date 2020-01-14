@@ -2,14 +2,12 @@
 """
     fetches url
 """
-from urllib import request
+import requests
 
 if __name__ == "__main__":
-    with request.urlopen("https://intranet.hbtn.io/status") as response:
-        resp = response.read()
-        cont = resp.decode('utf-8')
-        print("Body response:")
-        print(
-            "\t- type: {}\n\t- content: {}"
-            .format(type(cont), cont)
-        )
+    r = requests.get('https://intranet.hbtn.io/status')
+    print("Body response:")
+    print(
+        "\t- type: {}\n\t- content: {}"
+        .format(type(r.text), r.text)
+    )
