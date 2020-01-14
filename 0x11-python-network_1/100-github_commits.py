@@ -10,12 +10,15 @@ if __name__ == "__main__":
         sys.argv[2], sys.argv[1]
     )
     r = requests.get(url)
+    counter = 0
     try:
         json_data = r.json()
         for data in json_data:
-            print("{}: {}".format(
-                data.get('sha'),
-                data['commit']['author'].get('name'))
-            )
+            if counter < 10:
+                print("{}: {}".format(
+                    data.get('sha'),
+                    data['commit']['author'].get('name'))
+                  )
+                counter = counter + 1
     except ValueError:
         print("Not a valid JSON")
