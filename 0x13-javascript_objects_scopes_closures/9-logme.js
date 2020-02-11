@@ -1,2 +1,6 @@
 #!/usr/bin/node
-exports.logMe = function (item) {}
+var e = 0;
+exports.logMe = function (item) {
+  console.log(e + ': ' + item);
+  e = e + 1;
+};
