@@ -1,7 +1,6 @@
 #!/usr/bin/node
-const SquereTest = require('./5-square');
 
-class Square extends SquareTest {
+module.exports = class Square extends require('./5-square.js') {
   charPrint (c) {
     if (c === undefined) {
       c = 'X';
@@ -15,6 +14,4 @@ class Square extends SquareTest {
       console.log(myStr);
     }
   }
-}
-
-module.exports = Square;
+};
