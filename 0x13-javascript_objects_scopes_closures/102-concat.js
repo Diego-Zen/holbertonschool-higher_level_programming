@@ -11,7 +11,7 @@ const fileB = fs.readFileSync(myArgs[3], 'utf-8', (err, data) => {
   if (err) throw err;
 });
 
-const result = fileA + '\n' + fileB + '\n';
+const result = fileA + fileB;
 
 fs.writeFileSync(myArgs[4], result, 'utf-8', (err, data) => {
   if (err) throw err;
