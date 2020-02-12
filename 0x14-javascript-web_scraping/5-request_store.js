@@ -11,6 +11,5 @@ request(myArgs[2], function (error, response, body) {
     fs.writeFile(myArgs[3], body, 'utf-8', (err, data) => {
       if (err) { console.log(err); }
     });
-    console.log('body:', body);
   }
 });
